@@ -16,10 +16,10 @@
 \usepackage[default]{droidsans}
 
 \usepackage{tocloft}
-\usepackage{graphicx}
 \usepackage{multirow}
 \usepackage[utf8]{inputenc}
 \usepackage{url}
+\usepackage{tabularx}
 \title{Hardin-Curriculum Vitae}
 %-----------------------------------------------------------
 %Edit these values as you see fit
@@ -48,7 +48,7 @@
 
 %-----------------------------------------------------------
 %Custom commands
-\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resitem}[1]{\item #1 \vspace{-8pt}}
 
 \newcommand{\resheading}[1]{\vspace{8pt}
   \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
@@ -58,11 +58,16 @@
   }\vspace{-5pt}
 }
 
-\newcommand{\ressubheading}[4]{
-\begin{tabular*}{6.5in}{l@ | c | c | r }
-		\textbf{#1} & #2 
-		\textit{#3} & \textit{#4} \\
-\end{tabular*}\vspace{-6pt}}
+\newcommand{\ressubheading}[4]{\vspace{4pt}
+	\begin{tabularx}{\textwidth}{X r}
+		\textbf{#1} & \textit{#4}
+	\end{tabularx}
+
+	\begin{tabularx}{\textwidth}{X r}
+		#2 & \textit{#3}
+	\end{tabularx}\vspace{-6pt}
+	
+}
 %-----------------------------------------------------------
 
 \begin{document}
@@ -81,8 +86,7 @@
 \resheading{Work Experience}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	\ressubheading{Instructional Technology and Communication Assistant}{DoIT Academic Technology, University of Wisconsin-Madison}{Madison, WI}{2013--present}
-	
+	\ressubheading{Instructional Technology and Communication Assistant}{DoIT Academic Technology, University of Wisconsin at Madison}{Madison, WI}{2013--present}
 	\begin{itemize}
 		\resitem{Development in JavaScript, CSS and HTML for ARIS and SIFTR.}
 		\resitem{Game design, testing, and user training on ARIS.}
@@ -91,10 +95,6 @@
 		\resitem{Academic Technology technical support for campus faculty and staff.}
 	\end{itemize}
 
-\begin{itemize}
-\item
-	
-\item 
 	\ressubheading{Director of Religious Education}{James Reeb Unitarian Universalist Congregation}{Madison, WI}{2011--2014}
 	\begin{itemize}
 		\resitem{Recruited, trained, and supervised over 20 volunteer teachers per semester.}
@@ -103,7 +103,7 @@
 		\resitem{Created and maintained digital pedagogy support and communication tools.}
 	\end{itemize}	
 
-\item            	
+
 	\ressubheading{Technical Support Coordinator}{United Cerebral Palsy of Greater Dane County}{Madison, WI}{2012--2013}
 	\begin{itemize}
 		\resitem{Provided technical support and training for over 65 Windows and iPad users.}
@@ -111,20 +111,16 @@
 		\resitem{Developed organization-wide technology strategy to take advantage of new digital tools.}
 	\end{itemize}
 
-\item            	
 	\ressubheading{Volunteer Coordinator of Educational Technology}{Sector67}{Madison, WI}{2012}
 	\begin{itemize}
 		\resitem{Organized and taught courses on technology topics, including Linux, Java, and Technology for Students.}
 	\end{itemize}
 
-\item            	
 	\ressubheading{Adjunct Instructor of Information Technology}{ITT Technical Institute}{Madison, WI}{2011}
 	\begin{itemize}
 		\resitem{Taught Introduction to the PC, Windows 7, and Linux System Administration.}
-
 	\end{itemize}
 
-\item            	
 	\ressubheading{Program Chair of Information Technology}{Globe University East}{Madison, WI}{2010--2011}
 	\begin{itemize}
 		\resitem{Provided programmatic support for students and faculty with training, advising, recruitment, and hiring.}
@@ -133,7 +129,6 @@
 		\resitem{Taught a variety of IT courses, including Operating Systems, Microsoft Office, Keyboarding, and Introduction to Computer Literacy.}
 	\end{itemize}
 
-\item            	
 	\ressubheading{Database Design Volunteer}{Grassroots Leadership College}{Madison, WI}{2010--2012}
 	\begin{itemize}
 		\resitem{Re-designed FileMaker databases for conversion to CiviCRM; recovered data with Pentaho.}
@@ -141,7 +136,6 @@
 		\resitem{Troubleshot general office technology issues and provided various tech trainings.}
 	\end{itemize}
 
-\item            	
 	\ressubheading{Peace Corps Information and Communication Technology (ICT) Teacher Volunteer}{Peace Corps Ghana}{Nalerigu, Ghana; Mampong, Ghana}{2007--2010}
 	\begin{itemize}
 		\resitem{Creatively used limited resources to teach hands-on skills and theory to over 850 high school students, 200 elementary students, and 220 adults. Class sizes ranged from 4 to 70 students.}
@@ -156,20 +150,17 @@
 		\resitem{Organized and led four clubs (Staff Ubuntu Linux Club, Elective ICT Club, Websites and Internet Club, and the Middle School Girls Club) and coordinated projects with an HIV/AIDS club. }
 	\end{itemize}
 
-\item            	
 	\ressubheading{ESL Computer Tutor Volunteer}{Minnesota Literacy Council}{Minneapolis, MN}{2006--2007}
 	\begin{itemize}
 		\resitem{Tutored ESL adults in basic computer skills.}
 	\end{itemize}
 
-\item            	
 	\ressubheading{Information Support Specialist}{McQuay International}{Minneapolis, MN}{2005--2006}
 	\begin{itemize}
 		\resitem{Provided phone and email based training and troubleshooting for international sales reps and engineers.}
 		\resitem{Created a new documentation database with tutorial documents for three major systems.}
 	\end{itemize}
 
-\item            	
 	\ressubheading{Programmer, Web Developer and System Administrator}{Center for Demography in Health and Aging}{Madison, WI}{2002--2005}
 	\begin{itemize}
 		\resitem{Developed CDHA’s website using HTML, CSS, DreamWeaver and Photoshop.}
@@ -178,28 +169,19 @@
 		\resitem{Administered the OLDR (Off-line Longitudinal Data Repository) Red Hat Linux system.}
 	\end{itemize}
 
-\end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Education}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{itemize}
-\item
-	%\ressubheading{My University}{My Town, ON}{B.Sc. Physics}{2004 - 2008}
+
+	\ressubheading{Master's student in Digital Media, School of Education}{University of Wisconsin-Madison}{Madison, WI}{2013--present}
 	\begin{itemize}
-		\resitem{Undergraduate Thesis: Why Electron Spins Rule}
-		\resitem{Graduated with Honours and a XX.X\% average}
+		\resitem{Completed courses in 'Interactive Media \& Computing in the Curriculum', 'Mentorship in Participatory Cultures', 'Human Abilities and Learning', 'Technology Leadership', 'Introducing Comp Sci to K-12', 'Current topics in Science \& Technology Studies', 'Constructionism', 'Digital Media and Learning', 'Design in Virtual Reality', 'Research in Computing Education', 'Tools for Thought', and 'Research in Human Computer Interaction'.}
 	\end{itemize}
 
-\item
-	%\ressubheading{My High School}{Hick Town, ON}{High School Diploma}{2000 - 2004}
-	\begin{itemize}
-		\resitem{President of Students' Council and captain of the rugby team in senior year}
-		\resitem{Graduated with a XX.X\% average}
-	\end{itemize}
-\end{itemize}
 
+	\ressubheading{B.Sc in Computer Science}{University of Wisconsin-Madison}{Madison, WI}{2004}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Skills}
