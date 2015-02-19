@@ -49,6 +49,7 @@
 %-----------------------------------------------------------
 %Custom commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+
 \newcommand{\resheading}[1]{\vspace{8pt}
   \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
     \begin{shaded}
@@ -58,7 +59,7 @@
 }
 
 \newcommand{\ressubheading}[4]{
-\begin{tabular*}{6.5in}{l | {\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+\begin{tabular*}{6.5in}{l@ | c | c | r }
 		\textbf{#1} & #2 
 		\textit{#3} & \textit{#4} \\
 \end{tabular*}\vspace{-6pt}}
@@ -79,10 +80,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Work Experience}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{itemize}
-\item
-	%DOIT Instructional Technology and Communication Assistant
-	%\ressubheading{W}{Z}{Y}{X}
+
+	\ressubheading{Instructional Technology and Communication Assistant}{DoIT Academic Technology, University of Wisconsin-Madison}{Madison, WI}{2013--present}
 	
 	\begin{itemize}
 		\resitem{Development in JavaScript, CSS and HTML for ARIS and SIFTR.}
@@ -92,8 +91,11 @@
 		\resitem{Academic Technology technical support for campus faculty and staff.}
 	\end{itemize}
 
+\begin{itemize}
+\item
+	
 \item 
-	%\ressubheading{Happy Time Farms}{Hick Town, ON}{Farm Hand}{Sept. 2000 - Dec. 2002}
+	\ressubheading{Director of Religious Education}{James Reeb Unitarian Universalist Congregation}{Madison, WI}{2011--2014}
 	\begin{itemize}
 		\resitem{Recruited, trained, and supervised over 20 volunteer teachers per semester.}
 		\resitem{Coordinated inspiring and meaningful curriculum activities across 5 classrooms (ages 0 – 18).}
@@ -102,12 +104,81 @@
 	\end{itemize}	
 
 \item            	
-	%\ressubheading{Hick Town Press}{Hick Town, ON}{Paperboy}{June 1996 - Aug. 2000}
+	\ressubheading{Technical Support Coordinator}{United Cerebral Palsy of Greater Dane County}{Madison, WI}{2012--2013}
 	\begin{itemize}
-		\resitem{Delivered the local newspaper to 70 customers every morning.}
+		\resitem{Provided technical support and training for over 65 Windows and iPad users.}
+		\resitem{Administered Windows Server 2008, Exchange 2010, anti-virus, security, and backup systems.}
+		\resitem{Developed organization-wide technology strategy to take advantage of new digital tools.}
 	\end{itemize}
-\end{itemize}
 
+\item            	
+	\ressubheading{Volunteer Coordinator of Educational Technology}{Sector67}{Madison, WI}{2012}
+	\begin{itemize}
+		\resitem{Organized and taught courses on technology topics, including Linux, Java, and Technology for Students.}
+	\end{itemize}
+
+\item            	
+	\ressubheading{Adjunct Instructor of Information Technology}{ITT Technical Institute}{Madison, WI}{2011}
+	\begin{itemize}
+		\resitem{Taught Introduction to the PC, Windows 7, and Linux System Administration.}
+
+	\end{itemize}
+
+\item            	
+	\ressubheading{Program Chair of Information Technology}{Globe University East}{Madison, WI}{2010--2011}
+	\begin{itemize}
+		\resitem{Provided programmatic support for students and faculty with training, advising, recruitment, and hiring.}
+		\resitem{Developed and maintained facility and curriculum resources, including a Blackboard implementation.}
+		\resitem{Organized and led community workshops.}
+		\resitem{Taught a variety of IT courses, including Operating Systems, Microsoft Office, Keyboarding, and Introduction to Computer Literacy.}
+	\end{itemize}
+
+\item            	
+	\ressubheading{Database Design Volunteer}{Grassroots Leadership College}{Madison, WI}{2010--2012}
+	\begin{itemize}
+		\resitem{Re-designed FileMaker databases for conversion to CiviCRM; recovered data with Pentaho.}
+		\resitem{Led a committee of IT volunteers in setting a new IT vision.}
+		\resitem{Troubleshot general office technology issues and provided various tech trainings.}
+	\end{itemize}
+
+\item            	
+	\ressubheading{Peace Corps Information and Communication Technology (ICT) Teacher Volunteer}{Peace Corps Ghana}{Nalerigu, Ghana; Mampong, Ghana}{2007--2010}
+	\begin{itemize}
+		\resitem{Creatively used limited resources to teach hands-on skills and theory to over 850 high school students, 200 elementary students, and 220 adults. Class sizes ranged from 4 to 70 students.}
+		\resitem{Set up, administered and designed curriculum for one of the first networked dual boot Ubuntu Linux/Windows XP labs in Ghana. }
+		\resitem{Mentored 5 high-school and university teachers with lesson planning and instructional design. }
+		\resitem{Trained dozens of academic staff members in basic computer skills, hardware repair, software installations, and lab administration.}
+		\resitem{Coordinated and produced student cultural dance and HIV/AIDS educational video projects.}
+		\resitem{Helped organize the website, served as a group leader, and taught ICT at 3 annual week-long STARS (Students Taking Action Reaching For Success) high-school conferences.}
+		\resitem{Created, promoted and distributed the ICT Resource CD for ICT teachers and students, which contained a full range of culturally appropriate instructional materials including lesson plans, exams, textbooks, educational open source software, and classroom technology tips.}
+		\resitem{Coordinated the ICT Think-Tank: representing over 140 volunteers, this committee worked on dozens of cutting-edge technology projects, including designing and creating informational websites, writing educational computer lab manuals, and developing the Library Linux operating system. }
+		\resitem{Organized and led the ICT technical training for incoming volunteers at numerous workshops and conferences.}
+		\resitem{Organized and led four clubs (Staff Ubuntu Linux Club, Elective ICT Club, Websites and Internet Club, and the Middle School Girls Club) and coordinated projects with an HIV/AIDS club. }
+	\end{itemize}
+
+\item            	
+	\ressubheading{ESL Computer Tutor Volunteer}{Minnesota Literacy Council}{Minneapolis, MN}{2006--2007}
+	\begin{itemize}
+		\resitem{Tutored ESL adults in basic computer skills.}
+	\end{itemize}
+
+\item            	
+	\ressubheading{Information Support Specialist}{McQuay International}{Minneapolis, MN}{2005--2006}
+	\begin{itemize}
+		\resitem{Provided phone and email based training and troubleshooting for international sales reps and engineers.}
+		\resitem{Created a new documentation database with tutorial documents for three major systems.}
+	\end{itemize}
+
+\item            	
+	\ressubheading{Programmer, Web Developer and System Administrator}{Center for Demography in Health and Aging}{Madison, WI}{2002--2005}
+	\begin{itemize}
+		\resitem{Developed CDHA’s website using HTML, CSS, DreamWeaver and Photoshop.}
+		\resitem{Designed PHP forms with dynamically linked ASP and SQL databases. }
+		\resitem{Wrote extensive documentation for the IT systems and protocols.}
+		\resitem{Administered the OLDR (Off-line Longitudinal Data Repository) Red Hat Linux system.}
+	\end{itemize}
+
+\end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
