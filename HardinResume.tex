@@ -1,8 +1,13 @@
-% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
-% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
-% (c) 2008 Nathaniel Johnston <nathaniel@nathanieljohnston.com> http://www.nathanieljohnston.com
-% (l) 2012 Arun I B <arunib@smail.iitm.ac.in> http://www.ee.iitm.ac.in/~ee10s026/
+
 %This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+% Don't forget you have to do this:
+%pdflatex paperName
+%bibtex paper (not the name of the .bib file!
+%pdflatex paperName
+%pdflatex paperName
+
+
 
 \documentclass[letterpaper,11pt]{article}
 \newlength{\outerbordwidth}
@@ -37,9 +42,9 @@
 
 \newcommand{\resheading}[1]{\vspace{8pt}
   \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
-    \begin{shaded}
-\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
-    \end{shaded}
+	 \begin{shaded}
+	\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}		{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+	 \end{shaded}
   }\vspace{-5pt}
 }
 
@@ -51,7 +56,7 @@
 	\begin{tabularx}{\textwidth}{X r}
 		#2 & \textit{#3}
 	\end{tabularx}\vspace{-6pt}
-	
+
 }
 
 \makeatletter
@@ -84,67 +89,97 @@
 
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
   & \\
-%-----------------------------------------------------------  
-  \textbf{\huge Caroline D. Hardin } & 
-  caroline.hardin@doit.wisc.edu
-  $|$ 608.496.1294 
+%-----------------------------------------------------------
+  \textbf{\huge Caroline D. Hardin } & \\
+  caroline.hardin@wisc.edu
+  $|$ 608.496.1294 $|$ 129 S. Lakewood Garden Lane, Madison, WI 53704
 \end{tabular*}
 
+%todo professional membership icls ACM AERA
+
+%todo mentors
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Work Experience}
+%\resheading{Research Interests}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Computer science education, increasing diversity in computer science
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Research Groups}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ressubheading{Complex Play Lab}{}{}{2014--present}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Formal Education}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	\ressubheading{Instructional Technology and Communication Assistant}{DoIT Academic Technology, University of Wisconsin at Madison}{Madison, WI}{2013--present}
+%todo do like Berlands in the slack
+%todo add committee
+%todo add dissertation suggested title
+
+\ressubheading{PhD student in Computer Science Education}{University of Wisconsin-Madison}{Madison, WI}{2015--present}
 	\begin{itemize}
-		\resitem{Development in JavaScript, CSS and HTML for ARIS and SIFTR.}
-		\resitem{Game design, testing, and user training on ARIS.}
-		\resitem{MOOC forum moderation and tech support.}
-		\resitem{Case Scenario/Critical Reader digital narrative tool technical support.}
-		\resitem{Academic Technology technical support for campus faculty and staff.}
+	\resitem{Advisors: Matthew Berland and Mike Swift}
 	\end{itemize}
 
-	\ressubheading{Director of Religious Education}{James Reeb Unitarian Universalist Congregation}{Madison, WI}{2011--2014}
-	\begin{itemize}
-		\resitem{Recruited, trained, and supervised over 20 volunteer teachers per semester.}
-		\resitem{Coordinated inspiring and meaningful curriculum activities across 5 classrooms (ages 0 – 18).}
-		\resitem{Organized community building workshops, fairs and events.}
-		\resitem{Created and maintained digital pedagogy support and communication tools.}
-	\end{itemize}	
 
-
-	\ressubheading{Technical Support Coordinator}{United Cerebral Palsy of Greater Dane County}{Madison, WI}{2012--2013}
+	\ressubheading{M.S. in Curriculum \& Instruction}{University of Wisconsin-Madison}{Madison, WI}{2015}
 	\begin{itemize}
-		\resitem{Provided technical support and training for over 65 Windows and iPad users.}
-		\resitem{Administered Windows Server 2008, Exchange 2010, anti-virus, security, and backup systems.}
-		\resitem{Developed organization-wide technology strategy to take advantage of new digital tools.}
+	\resitem{Thesis: Learning to program using online forums - A comparison of links posted on Reddit and Stack Overflow}
+	\resitem{Advisor: Matthew Berland}
 	\end{itemize}
 
-	\ressubheading{Volunteer Coordinator of Educational Technology}{Sector67}{Madison, WI}{2012}
+	\ressubheading{B.S. in Computer Science}{University of Wisconsin-Madison}{Madison, WI}{2004}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Teaching Experience}  %todo remove details? Ask Berland
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\ressubheading{Teaching Assistant}{University of Wisconsin - Madison}{Madison, WI}{2016--2017}
 	\begin{itemize}
-		\resitem{Organized and taught courses on technology topics, including Linux, Java, and Technology for Students.}
+		\resitem{Planned and led 75 minute classes on 'Video Games and Learning'.}
+		\resitem{Advise 40 students a semester on successful writing strategies.}
+		\resitem{Utilize Canvas and Desire to Learn to provide instructional support for students.}
 	\end{itemize}
+
+	\ressubheading{Technology Trainer}{Freelance}{Madison, WI}{2016--2017}
+	\begin{itemize}
+		\resitem{Designed custom curriculum on Google suite for a non-profit.}
+	\end{itemize}
+
+
+	\ressubheading{Microsoft Student Partner}{Microsoft}{Madison, WI}{2016--2017}
+	\begin{itemize}
+		\resitem{Organize monthly technical workshops for UW Madison students on a variety of topics, including games, mobile technology, web development, IoT Hardware and machine learning.}
+	\end{itemize}
+
+	\ressubheading{Computer Science Tutor}{University of Wisconsin - Madison}{Madison, WI}{2016--present}
+	\begin{itemize}
+		\resitem{Assist students in introductory computer science classes with code and theoretical concepts.}
+	\end{itemize}
+
+	\ressubheading{Computer Science Workshop Designer}{University of Wisconsin - Madison}{Madison, WI}{2016--2017}
+	\begin{itemize}
+		\resitem{Collaborating with a team to design and lead a MIT App Inventor workshop for freshmen who have not yet declared their major but are considering computer science.}
+	\end{itemize}
+
 
 	\ressubheading{Adjunct Instructor of Information Technology}{ITT Technical Institute}{Madison, WI}{2011}
 	\begin{itemize}
-		\resitem{Taught Introduction to the PC, Windows 7, and Linux System Administration.}
+		\resitem{Taught Linux System Administration, Windows 7, and Introduction to the PC (hardware tech support).}
 	\end{itemize}
 
 	\ressubheading{Program Chair of Information Technology}{Globe University East}{Madison, WI}{2010--2011}
 	\begin{itemize}
+		\resitem{Taught a variety of IT courses, including Operating Systems, Microsoft Office, Keyboarding, and Introduction to Computer Literacy.}
 		\resitem{Provided programmatic support for students and faculty with training, advising, recruitment, and hiring.}
 		\resitem{Developed and maintained facility and curriculum resources, including a Blackboard implementation.}
 		\resitem{Organized and led community workshops.}
-		\resitem{Taught a variety of IT courses, including Operating Systems, Microsoft Office, Keyboarding, and Introduction to Computer Literacy.}
 	\end{itemize}
 
-\pagebreak
-
-	\ressubheading{Database Design Volunteer}{Grassroots Leadership College}{Madison, WI}{2010--2012}
-	\begin{itemize}
-		\resitem{Re-designed FileMaker databases for conversion to CiviCRM; recovered data with Pentaho.}
-		\resitem{Led a committee of IT volunteers in setting a new IT vision.}
-		\resitem{Troubleshot general office technology issues and provided various tech trainings.}
-	\end{itemize}
 
 	\ressubheading{Peace Corps Information and Communication Technology (ICT) Teacher Volunteer}{Peace Corps Ghana}{Nalerigu, Ghana; Mampong, Ghana}{2007--2010}
 	\begin{itemize}
@@ -165,102 +200,251 @@
 		\resitem{Tutored ESL adults in basic computer skills.}
 	\end{itemize}
 
-	\ressubheading{Information Support Specialist}{McQuay International}{Minneapolis, MN}{2005--2006}
+
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Relevant Work Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ressubheading{TEALS Technology Education And Literacy In Schools}{Wisconsin Regional Manager}{Madison, WI}{2017--present}
 	\begin{itemize}
+		\resitem{Recruit, train and supervise 35+ IT professional volunteers.}
+		\resitem{Support 13 classroom teachers.}
+		\resitem{Design and implement school recruitment strategy for region.}
+
+	\end{itemize}
+
+
+\ressubheading{Games + Learning + Society }{Conference Co-Chair}{Madison, WI}{2015--2016}
+	\begin{itemize}
+		\resitem{Created and managed a six-figure budget.}
+		\resitem{Recruited, trained and supervised over 40 volunteers.}
+		\resitem{Managed the conference web site, social media, and responded as primary point of contact.}
+		\resitem{Organized venue logistics and coordinated the schedule.}
+
+	\end{itemize}
+
+	\ressubheading{Instructional Technology and Communication Assistant}{DoIT Academic Technology, University of Wisconsin at Madison}{Madison, WI}{2013--2015}
+	\begin{itemize}
+		\resitem{Provided technical assistance and training to faculty and staff in Moodle and Desire to Learn.}
+		\resitem{Assist faculty in using technology in instructional design.}
+		\resitem{Developed in JavaScript, CSS and HTML for ARIS and SIFTR.}
+		\resitem{Supported faculty and staff with academic technology issues.}
+		\resitem{Provided technical support and forum moderation for MOOC with over 40,000 users.}
+		\resitem{Designed games and new user trainings for ARIS.}
+		\resitem{Resolved technical issues for users of Case Scenario/Critical Reader digital narrative tool.}
+
+	\end{itemize}
+
+	\ressubheading{Director of Religious Education}{James Reeb Unitarian Universalist Congregation}{Madison, WI}{2011--2014}
+	\begin{itemize}
+		\resitem{Recruited, trained, and supervised over 20 volunteer teachers each semester.}
+		\resitem{Coordinated inspiring and meaningful curriculum activities across 5 classrooms (ages 0--18).}
+		\resitem{Organized community building workshops, fairs and events.}
+		\resitem{Created and maintained digital pedagogy support and communication tools.}
+	\end{itemize}
+
+
+	\ressubheading{Technical Support Coordinator}{United Cerebral Palsy of Greater Dane County}{Madison, WI}{2012--2013}
+	\begin{itemize}
+		\resitem{Administered Windows Server 2008, Exchange 2010, anti-virus, security, and backup systems.}
+		\resitem{Provided technical support and training for over 65 Windows and iPad users.}
+		\resitem{Developed organization-wide technology strategy to take advantage of new digital tools.}
+	\end{itemize}
+
+
+\ressubheading{Information Support Specialist}{McQuay International}{Minneapolis, MN}{2005--2006}
+	\begin{itemize}
+		\resitem{Programmed in FoxPro to improve and support a legacy order entry system processing over 1 million dollars in orders a day.}
 		\resitem{Provided phone and email based training and troubleshooting for international sales reps and engineers.}
 		\resitem{Created a new documentation database with tutorial documents for three major systems.}
 	\end{itemize}
 
 	\ressubheading{Programmer, Web Developer and System Administrator}{Center for Demography in Health and Aging}{Madison, WI}{2002--2005}
 	\begin{itemize}
-		\resitem{Developed CDHA’s website using HTML, CSS, DreamWeaver and Photoshop.}
+		\resitem{Administered the OLDR (Off-line Longitudinal Data Repository) Red Hat Linux system.}
+		\resitem{Developed CDHA's website using HTML, CSS, DreamWeaver and Photoshop.}
 		\resitem{Designed PHP forms with dynamically linked ASP and SQL databases. }
 		\resitem{Wrote extensive documentation for the IT systems and protocols.}
-		\resitem{Administered the OLDR (Off-line Longitudinal Data Repository) Red Hat Linux system.}
+
 	\end{itemize}
+
 
 \clearpage
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Education}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	\ressubheading{Master's student in Digital Media, School of Education}{University of Wisconsin-Madison}{Madison, WI}{2013--present}
-	\begin{itemize}
-		\resitem{Completed courses in 'Interactive Media \& Computing in the Curriculum', 'Mentorship in Participatory Cultures', 'Human Abilities and Learning', 'Technology Leadership', 'Introducing Comp Sci to K-12', 'Current topics in Science \& Technology Studies', 'Constructionism', 'Digital Media and Learning', 'Design in Virtual Reality', 'Research in Computing Education', 'Tools for Thought', and 'Research in Human Computer Interaction'.}
-	\end{itemize}
-
-	\ressubheading{B.Sc in Computer Science}{University of Wisconsin-Madison}{Madison, WI}{2004}
+%todo denote who was student authors and who were faculty
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Select Workshops and Trainings}
+\resheading{Peer-Reviewed Conference Proceedings}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	\ressubheading{Humanitarian Free and Open Source Software Workshop}{ACM SIGSCE (Special Interest Group Computer Science Education) Conference}{Atlanta, GA}{2014}
-	\hfill 
-	
-	\ressubheading{Peace Corps Pre-Service Training}{Peace Corps Ghana}{Ghana, West Africa}{2007}
-	\begin{itemize}
-		\resitem{Community development and local needs assessment, teaching methodology, technology in development, HIV/AIDS and the Mamprusi language (10 weeks). }
-	\end{itemize}
-	
-	\ressubheading{ESL Training}{Minnesota Literacy Council}{Minneapolis, MN}{2005-2010}
-	\begin{itemize}
-		\resitem{MLC certification course in ESL teaching (12 hours).}
-	\end{itemize}	
+\ressubheading{A sociocultural analysis of digital privacy curricula}{AERA}{New York, NY}{2018}
+	\hfill
+
+\ressubheading{Using Embodied Cognition to Teach Open Source Software}{FABLEARN}{Stanford, CA}{2016}
+	\hfill
+
+	\ressubheading{Reddit /r/learnprogramming VS StackOverflow}{SIGCSE - Special Interest Group Computer Science Education}{Memphis, TN}{2016}
+	\hfill
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Publications}
+\resheading{Conference Presentations}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ressubheading{Education Panel}{Hackers}{Santa Cruze, CA}{2017}
+	\hfill
+
+\ressubheading{E-Textiles in Education}{Hackers}{Santa Cruze, CA}{2017}
+	\hfill
+
+	\ressubheading{BrickOpenCode: Learning about software licenses with LEGOs and Scratch}{DEFCON R00TZ}{Las Vegas, NV}{2016}
+	\hfill
+
+\ressubheading{An argument for applying educational theory to computer science education}{Hackers}{Santa Cruze, CA}{2016}
+	\hfill
+
+	\ressubheading{Brick in the Wall vs. Hole in the Wall: Education for hackers and hacking education}{BSides Las Vegas}{Las Vegas, NV}{2014}
+	\hfill
+
+	\ressubheading{Free and Open Source Software in School Communities}{Open Source Systems Conference}{Hammamet, Tunisia}{2012}
+	\hfill
+
+	\ressubheading{Free as in Freedom: the vision of open source software in education}{Software Freedom Day}{Monastir, Tunisia}{2012}
+	\hfill
+
+	\ressubheading{Using Technology in the Ghanaian Classroom}{BarCamp Ghana}{Accra, Ghana}{2009}
+	\hfill
+
+	\ressubheading{The Promise and Potential of Open Source Software in Education}{Free and Open Source Software Day}{Accra, Ghana}{2009}
+	\hfill{}
+
+%todo - teaching activities - classes taught as an adjunct, etc. Ask Berland more
+%todo see Kafai breakdown of categories
+%todo professional affiliations
+%todo blogging
+
+%%%%%%%%%%%%%%%%%%%%
+\resheading{Book Chapters}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{-52pt}
 \bibliographystyle{plain}
 \bibliography{publications}
 \nocite{*}
 
-\pagebreak
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Conference Presentations}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	\ressubheading{Brick in the Wall vs. Hole in the Wall: Education for hackers and hacking education}{BSides Las Vegas}{Las Vegas, NV}{2014}
-	\hfill
-	
-	\ressubheading{Free and Open Source Software in School Communities}{Open Source Systems Conference}{Hammamet, Tunisia}{2012}
-	\hfill 
-	
-	\ressubheading{Free as in Freedom: the vision of open source software in education}{Software Freedom Day}{Monastir, Tunisia}{2012}
-	\hfill 
-	
-	\ressubheading{Using Technology in the Ghanaian Classroom}{BarCamp Ghana}{Accra, Ghana}{2009}
-	\hfill 
-	
-	\ressubheading{The Promise and Potential of Open Source Software in Education}{Free and Open Source Software Day}{Accra, Ghana}{2009}
-	\hfill{}
-	
-	
+%popular press - the thing in ed tech weekly %todo
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Conference and Workshop Leadership}
+\resheading{Service Activities}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-	\ressubheading{Mentor}{Made w/ Code at BadgerBOTS}{Middleton, WI}{2015}
-	\hfill 
-		
-	\ressubheading{CS Curriculum Designer}{Wisconsin Science Festival}{Madison, WI}{2014}
-	\hfill
 
-	\ressubheading{Wearable Electronics Curriculum Designer}{Cyber Learning Club}{New Glarus, WI}{2014}
-	\hfill
+%todo Conference Reviews
+%todo Bodgery
 
-	\ressubheading{Awards Designer}{Games and Learning Society Conference}{Madison, WI}{2014}
-	\hfill
+\ressubheading{Board Member}{Danenet}{2017 -- ongoing}{}
+\begin{itemize}
+		\resitem{Advise on technology initiatives}
+\end{itemize}
 
-	\ressubheading{Co-organizer}{UW Women's Hackathon}{Madison, WI}{2014}
-	\hfill
+\ressubheading{Director}{MadHacks}{2016 -- 2017}{}
+\begin{itemize}
+		\resitem{Leads student hackathon group which organizes technology events for 100-600 students. https://www.madhacks.org/}
+	\end{itemize}
 
-	\ressubheading{Artistic Director}{Steam Century}{Madison, WI}{2013--2014}
-	\hfill
+\ressubheading{Chair of Education Committee}{Bodgery Makerspace}{2016 -- ongoing}{}
+\begin{itemize}
+		\resitem{Recruits local technology experts and artists to run workshops. Facilitates and supports educational outreach efforts. In addition, has taught classes in e-textiles, software licenses and privacy.}
+	\end{itemize}
 
-	\ressubheading{Lead Organizer}{Women's Design-a-thon}{Madison, WI}{2013}
-	\hfill
+\ressubheading{Electronic Textiles Volunteer Instructor}{Madison Children's Museum}{2015}{}
+\begin{itemize}
+		\resitem{Designed, Coordinated and Taught a workshop on electronic textiles for middle school girls. http://madisonchildrensmuseum.org/event/digi-design/}
+	\end{itemize}
+
+\ressubheading{Saturday Science presenter}{Wisconsin Institute for Discovery}{2016}{}
+\begin{itemize}
+		\resitem{For this event, I designed and presented a hands-on e-textile table. Several electronic textile projects were created to be hands-on circuitry and programming concept demonstrations. Participants were also invited to try programming a LilyPad Arduino Proto-Snap development board which had been set up with example code and tutorial packets. 'Try it at home' handouts were also created.}
+	\end{itemize}
+
+\ressubheading{Game Design and Code Club volunteer}{Wingra School}{2015--2016}{}
+\begin{itemize}
+		\resitem{Guide elementary school students in creating games with Scratch, Scratch Jr., Game Star Mechanic, and Google Sketchup in a weekly Game Design and Code after school club.}
+	\end{itemize}
+
+\ressubheading{Tech Presenter}{Expanding Your Horizons}{2015 \& 2016}{}
+\begin{itemize}
+		\resitem{Worked with UW Professor Deb Deppeler to design a 1 hour 'Introduction to C Programming with E-Textiles' program for middle school girls. Final product included 4 sets of code with tutorial packets for the girls to explore different aspects of circuits, electronics and C programming, which are available under Creative Commons license}
+	\end{itemize}
+
+
+\ressubheading{Hour of Code Volunteer}{We Think Big, Inc.}{2015}{}
+\begin{itemize}
+		\resitem{Helped local teachers explore computer programming at an Hour of Code event.}
+	\end{itemize}
+
+\ressubheading{Wisconsin Science Festival Outreach Volunteer}{
+UW Madison WACM (Women of Association for Computing Machinery)}{2015}{}
+\begin{itemize}
+		\resitem{Taught the basics of binary numbers to children and parent attendees of the Wisconsin Science Festival, and assisted them in creating bracelets which used beads to represent their birthdays and initials in binary.}
+	\end{itemize}
+
+
+\ressubheading{Women and Identity in Gaming Symposium Invited Panelist}{Lawrence University}{2015}{}
+\begin{itemize}
+		\resitem{Discussed the research around women's identity in game development and other technology fields.}
+	\end{itemize}
+
+\ressubheading{Woman's Hackathon Coordinator}{University of Wisconsin-Madison}{2014}{}
+\begin{itemize}
+		\resitem{Co-organized the 2014 International Woman's Hackathon at UW-Madison, including event planning, recruiting judges and mentors, soliciting donations, graphic design, and advertising.}
+	\end{itemize}
+
+\ressubheading{Games Learning Society 2014 Conference Awards Designer}{Learning Games Network}{2014}{}
+\begin{itemize}
+		\resitem{Designed and created the Showcase awards for the GLS 2014 conference. The 4 award sizes were designed in 3D Lego modeling software, then the 2,000 custom selected LEGOs were purchased from 10 different international vendors to conform to budget and schedule constraints. A team of volunteers was guided in assembling the awards.}
+	\end{itemize}
+
+	\ressubheading{Women's Designathon Organizer}{Doyenne Group}{Madison, WI}{2013}{}
+	\begin{itemize}
+		\resitem{Led organization and vision setting for this hackathon style 2-day event, including participating in fund-raising, mentor recruitment, advertising, graphic design, and participant recruitment.}
+	\end{itemize}
+
+
+	\ressubheading{Volunteer Coordinator of Educational Technology}{Sector67}{Madison, WI}{2012}{}
+	\begin{itemize}
+		\resitem{Organized and taught courses on technology topics, including Linux, Java, and Technology for Students.}
+	\end{itemize}
+
+	\ressubheading{Database Design Volunteer}{Grassroots Leadership College}{Madison, WI}{2010--2012}{}
+	\begin{itemize}
+		\resitem{Re-designed FileMaker databases for conversion to CiviCRM; recovered data with Pentaho.}
+		\resitem{Led a committee of IT volunteers in setting a new IT vision.}
+		\resitem{Troubleshot general office technology issues and provided various tech trainings.}
+	\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Awards and Honors}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+		\resitem{Placed 2nd at the 2016 SIGCSE Student Research Competition for a poster and presentation on how people learn programming through links posted on Reddit and Stack Overflow.}
+		\resitem{Awarded `Best Theme' at the Convergence 2016 costume masquerade for a `Magic Carpet' costume, which incorporated a LilyPad Arduino with NeoPixels and a matching Gemma-powered magic lantern.}
+		\resitem{Placed 2nd at the 2014 Madworks Cryptocurrency Hackathon for a digital badge based game for Bitcoin.}
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Grants and Travel Awards}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%todo fix travel awards
+\begin{itemize}
+		\resitem{Grace Hopper}
+		\resitem{BSides Proving Ground}
+		\resitem{Microsoft Research E-Textiles Grant}
+\end{itemize}
+
 
 \end{document}
+
