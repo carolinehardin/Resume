@@ -16,8 +16,10 @@
 \raggedright
 \usepackage[svgnames]{xcolor}
 \usepackage{framed}
-\usepackage[top=.75in,bottom=.75in,left=0.75in,right=0.75in]{geometry}
+\usepackage[top=.75in,bottom=.75in,left=1in,right=1in]{geometry}
 
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
 
 \usepackage[T1]{fontenc}
 \usepackage[default]{droidsans}
@@ -28,6 +30,7 @@
 \usepackage{url}
 \usepackage{tabularx}
 \usepackage{subfiles}
+\usepackage{apacite}
 \title{Hardin-Curriculum Vitae}
 %-----------------------------------------------------------
 %Edit these values as you see fit
@@ -62,14 +65,16 @@
 \begin{document}
 \pagestyle{plain}
 
+\centerline{\textbf{\huge Caroline D. Hardin}}
 %-----------------------------------------------------------
 
-\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\begin{tabular*}{6in}{l@{\extracolsep{\fill}}r}
   & \\
 %-----------------------------------------------------------
-  \textbf{\huge Caroline D. Hardin } & \\
-  caroline.hardin@wisc.edu
-  | 608.496.1294 $|$
+  caroline.hardin@wisc.edu & 210 Teacher Education Building \\
+  1.608.496.1294 & Room 123A \\
+  ictwiki.org & 225 North Mills Street \\
+  & Madison, WI 53706 \\
 \end{tabular*}
 
 %todo professional membership icls ACM AERA
@@ -80,13 +85,6 @@
 %\textbf{Research Interests}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Computer science education, increasing diversity in computer science
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Research Groups}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subfile{sections/research_groups}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Formal Education}
@@ -126,16 +124,22 @@
 %todo professional affiliations
 %todo blogging
 
-
 %%%%%%%%%%%%%%%%%%%%
 \section{Book Chapters}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\bibliographystyle{plain}
 \bibliography{publications}
+\bibliographystyle{plain}
+
 \nocite{*}
 
 %popular press - the thing in ed tech weekly %todo
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research Groups}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subfile{sections/research_groups}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Service Activities}
@@ -157,4 +161,3 @@
 
 
 \end{document}
-
